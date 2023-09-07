@@ -1,0 +1,941 @@
+/*Color scheme*/
+
+@media (prefers-color-scheme: dark){
+    .everything {
+        background-color: #2b2d30;
+        background-size: 100%;
+        color: white;
+        margin: 0;
+        height: 100vh;
+    }
+
+    .form {
+        background: #ffffff;
+        --border-color: #2b2d30;
+    }
+
+    .Weathertitel {
+        color: #ffffff;
+    }
+
+    .input {
+        color: #2b2d30;
+    }
+
+    .reset {
+        color: #2b2d30;
+    }
+
+    .everythingfooter {
+        background-color: rgb(20, 20, 20);
+        background-size: 100%;
+        color: white;
+    }
+
+
+
+}
+
+@media (prefers-color-scheme: light) {
+    .everything {
+        background-color: white;
+        background-size: 100%;
+        color: black;
+        margin: 0;
+        height: 100vh;
+    }
+
+    .form {
+        background: #2b2d30;
+        --border-color: #ffffff;
+    }
+
+    .input {
+        color: #ffffff;
+    }
+
+    .reset {
+        color: #FFFFFF;
+    }
+
+    .everythingfooter {
+        background-color: rgb(228, 228, 228);
+        background-size: 100%;
+        color: #2b2d30;
+    }
+
+    .tableeverything {
+        color: #2b2d30;
+    }
+
+
+
+}
+
+
+/*HTML*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Überschriften*/
+
+.ueberschrift {
+    text-align: center;
+}
+
+
+.titleeffect  {
+    font-size: 30px;
+    text-align: center;
+    text-decoration-color:  rgb(15, 15, 15);
+    text-decoration: double;
+    margin-top: 5px;
+}
+
+/*APC*/
+/*Astro-physics-calculator*/
+
+.basiccalculations {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.escapevelocityovertitel {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.surfaceareastarovertitel {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.spatialangleovertitel {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.gridItem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    padding: 10px;
+}
+
+.gridItemNoImg {
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.twoRows {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.fullGrid {
+    grid-area: 1 / 1 / 4 / 2 !important;
+}
+
+.row2 {
+    grid-area: 3 / 2 / 4 / 3 !important; 
+}
+
+.gridTitle {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.DOSRovertitel {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.Escapevelositytitel {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.infotext {
+    margin-top: 0;
+    margin-left: 200px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.TextforMassObject {
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.inputbox1 {
+    margin-left: 10px;
+}
+
+.inputbox2 {
+    margin-left: 10px;
+}
+
+.Escapevelosity {
+    margin-left: 10px;
+    margin-right: 60%;
+    box-shadow: 0 0 0 5px ;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    left: -75%;
+    transform: translate(75%);
+}
+
+    /*Final result*/
+
+.finalresultescapevelocity {
+    margin-left: 10px;
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.finalresultescapevelocitynumber {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.finalresultescapevelocityconvert {
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.finalresultescapevelocityconvernumber {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.finalresultescapevelocityrounded {
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.finalresultescapevelocityroundednumber {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/*Convert to Scientific notation*/
+
+.Converttoscientificnotation {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.Textdecimalnum {
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 43px;
+    margin-bottom: 5px;
+}
+
+.inputbox3 {
+    margin-left: 10px;
+}
+
+.convertresult {
+    margin-left: 10px;
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.convertnumresult {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.Converttoscientificnotationa {
+    margin-left: 10px;
+    margin-right: 60%;
+    box-shadow: 0 0 0 5px ;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    left: -75%;
+    transform: translate(75%);
+}
+
+/*Convert to decimal number*/
+
+.Converttodecimalnumber {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.Textscientificnotationnum {
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 43px;
+    margin-bottom: 5px;
+}
+
+.inputbox4 {
+    margin-left: 10px;
+}
+
+.convertresult1 {
+    margin-left: 10px;
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.convertnumresult1 {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.Converttodecimalnumbera {
+    margin-left: 10px;
+    margin-right: 60%;
+    box-shadow: 0 0 0 5px ;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    left: -75%;
+    transform: translate(75%);
+
+}
+
+.infotexta {
+    margin-top: 0;
+    margin-left: 200px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+/*Surface Area*/
+
+.surfaceareastara {
+    margin-left: 10px;
+    margin-right: 60%;
+    box-shadow: 0 0 0 5px ;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    left: -75%;
+    transform: translate(75%);
+}
+
+
+.surfaceareastartitel {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.surfaceareastarinput2 {
+    margin-left: 10px;
+}
+
+.finalresultsurarst1 {
+    margin-left: 10px;
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.finalresultsurarst2 {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/*Spatial Angle*/
+
+.spatialanglea {
+    margin-left: 10px;
+    margin-right: 60%;
+    box-shadow: 0 0 0 5px ;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    left: -75%;
+    transform: translate(75%);
+}
+
+
+.spatialangletitel {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.TextforradiusObject {
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.TextforfaecheninhaltObject {
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.spatialangleinput1 {
+    margin-left: 10px;
+}
+
+.spatialangleinput2 {
+    margin-left: 10px;
+}
+
+.finalresultspatialangle1 {
+    margin-left: 10px;
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.finalresultspatialangle2 {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/*distribution of solar radiation*/
+
+.gridBody {
+    border: 5px solid black;
+    border-radius: 5px;
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+
+    & :is(p, input) {
+        margin: 0;
+    }
+}
+
+
+.DOSRtitel {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.TextfordistanceinAUObject {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: left;
+    margin: 0;
+}
+
+
+.finalresultDOSR1 {
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 800;
+    margin: 0;
+    text-align: left;
+}
+
+.finalresultDOSR2 {
+    font-size: 15px;
+    font-weight: 900;
+    margin: 0;
+    text-align: left;
+}
+
+/*Footer*/
+
+.everythingfooter {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.allrights {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.fa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 90px;
+    margin-bottom: 15px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #ff5700;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.footerlogo {
+    display: block;
+    border-radius: 120px;
+    margin-left: 10px;
+    position: absolute;
+    width: 150px;
+
+}
+
+.informationfooter {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: end;
+    margin-right: 10px;
+    margin-left: 80%;
+    word-break: break-word;
+}
+
+.logoetc {
+    width: 100%;
+}
+
+#footerid {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+/*Data Protection text*/
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
+
+/*Menu*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #565656;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 32px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #D3D3D3;
+}
+
+.sidenav .closebtn {
+    padding-right: 10px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    position: relative; /*This and the next line are for the footer*/
+    min-height: 110vh;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.sticky {
+    position: fixed;
+    left: 10px;
+    top: 67px;
+}
+
+.sidmenu {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 41px;
+}
+
+/*Header*/
+
+.Headertext {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.headersubtext {
+    font-size: 30px;
+    text-align: center;
+    text-decoration-color:  rgb(15, 15, 15);
+    text-decoration: double;
+    margin-top: 5px;
+}
+
+.mainPicture {
+    width: 50vw;
+    display : block;
+    margin: 0 auto;
+}
+
+/*Intoduction*/
+
+.introduction {
+    text-align: center;
+    text-decoration: double;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sidepicture {
+    display: inline-block;
+    grid-area: 1 / 1 / 3 / 2;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    z-index: 0;
+}
+
+/*Table*/
+
+table, td, th {
+    border: 1px solid;
+}
+  
+table {
+    border-collapse: collapse;
+}
+
+.tableheadertext {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.tablebodytext1 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.tablebodytext2 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.tablebodytext3 {
+    font-weight: 500;
+    font-size: 16px;
+}
+.tableeverything {
+    display: none;
+    visibility: hidden;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    text-align: center;
+}
+
+/*Search */
+
+.form button {
+    border: none;
+    background: none;
+    z-index: 1;
+}
+
+.form {
+    --timing: 0.3s;
+    --width-of-input: 200px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    scale: 1.25;
+    z-index: 1;
+}
+
+.input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    z-index: 1;
+}
+
+.form:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+    z-index: 1;
+}
+
+.form:focus-within {
+    border-radius: var(--after-border-radius);
+    z-index: 1;
+}
+
+input:focus {
+    outline: none;
+    z-index: 1;
+}
+
+.form:focus-within:before {
+    transform: scale(1);
+    z-index: 1;
+}
+
+.reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    display: block;
+    z-index: 1;
+}
+
+.form #runApi {
+    cursor: pointer;
+    z-index: 1;
+}
+
+.form svg {
+    width: 17px;
+    margin-top: 3px;
+    z-index: 1;
+}
+
+/*Titel*/
+.Weathertitel {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+
+/*Card*/
+
+.card {
+  transform: scale(1.5);
+    top: 250px;
+    width: 350px;
+    position: relative;
+    padding: 25px;
+    background: radial-gradient(178.94% 106.41% at 26.42% 106.41%, #FFF7B1 0%, rgba(255, 255, 255, 0) 71.88%), #FFFFFF;
+    box-shadow: 0 155px 62px rgba(0, 0, 0, 0.01), 0 87px 52px rgba(0, 0, 0, 0.05), 0 39px 39px rgba(0, 0, 0, 0.09), 0 10px 21px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+    transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+    cursor: pointer;
+    margin: auto;
+  }
+  
+  .card:hover {
+    transform: scale(1.60);
+  }
+  
+  .container {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    right: -35px;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.7);
+  }
+
+  .sun {
+    width: 240px;
+    height: 240px;
+  }
+  
+  .card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .card-header span:first-child {
+    word-break: break-all;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 135%;
+    color: rgba(87, 77, 51, 0.66);
+  }
+
+  .card-header span:nth-child(2) {
+    word-break: break-all;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 135%;
+    color: rgba(87, 77, 51, 0.66);
+  }
+
+  .card-header span:nth-child(3) {
+    word-break: break-all;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 135%;
+    color: rgba(87, 77, 51, 0.66);
+  }
+  
+  .card-header span:last-child {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 135%;
+    color: rgba(87, 77, 51, 0.66);
+  }
+  
+  .temp {
+    position: absolute;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: 0;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    color: rgba(87, 77, 51, 1);
+  }
+
+  .card-body p{
+    word-break: break-all;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 135%;
+    text-align: left;
+    color: rgba(87, 77, 51, 0.45);
+  }
+
+  /*Search Info*/
+
+  .weathertypeinfo {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 1;
+  }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/stylesMain.css" />
+    <script src="../js/scriptstarsearch.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Starsearch | Astro Website</title>
+  <div>
+  <img src="../images/menu_image_new.svg" alt="menu_image" onclick="openNav6()" class="sidmenu" id="menu_header"><h1 class="Headertext">Star Search</h1>
+  </div>
+  <div>
+  <p class="headersubtext">by David Bach</p>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
+    <a href="homepage.html">Homepage</a>
+    <a href="astrophysiccalculator.html">Astro-physic-calculator</a>
+    <a href="weather.html">Weather</a>
+    <a href="dataprotection.html">Data Protection</a>
+    <a href="starchart.html">Star Chart</a>
+  </div>
+</head>
+<body class="everything" id="main">
+
+
+  <form class="form">
+    <button id="runastroapi">
+      <img src="../images/search.svg" alt="">
+    </button>
+    <input class="input" placeholder="Type your text" type="text" id="astrosearchinput" />
+    <button class="reset" type="reset">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+    </button>
+  </form>
+
+
+  <table class="tableeverything" id="starTable">
+    <tr class="tableheadertext">
+      <th>Catalog</th>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Constellation</th>
+      <th>Right Ascension</th>
+      <th>Declination</th>
+    </tr>
+    <tr class="tablebodytext1">
+      <td id="catalogHD">XXXXXX</td>
+      <td id="Objectname">XXXXXX</td>
+      <td id="Objecttype">XXXXX</td>
+      <td id="Objectconstellationname">XXXXXXX</td>
+      <td id="Objectrightascension">00° 00' 00.00"</td>
+      <td id="Objectdeclination">00h 00m 00.00s</td>
+    </tr>
+
+    <tr class="tablebodytext2">
+    <td id="catalogHIP">XXXXXX</td>
+    </tr>
+
+    <tr class="tablebodytext3">
+      <td id="catalogHR">XXXXXX</td>
+    </tr>
+  </table>
+
+</body>
+<footer class="everythingfooter" id="footerid">
+  <div>
+  <a href="https://www.instagram.com/david_foto_official/" target="_blank" class="fa fa-instagram"></a> <a href="https://facebook.com/profile.php/?id=100084508481349" target="_blank" class="fa fa-facebook"></a>
+  </div>
+  <div class="logoetc">
+    <a href="Homepage.html">
+      <img src="../images/david_foto_official_logo.jpg" alt="Logo" class="footerlogo"></a> <p class="informationfooter">This is an astronomy website, created by David Bach. There are subsites like astro-physics and weather.</p>
+      </br>
+      </br>
+      <p class="copyright">Copyright © 2023 David Bach</p>
+      <p class="allrights">All rights reserved</p>
+  </div>
+</footer>
+</html>

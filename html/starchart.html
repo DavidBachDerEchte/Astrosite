@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/stylesMain.css" />
+    <script src="../js/scriptstarchart.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Starchart | Astro Website</title>
+  <div>
+  <img src="../images/menu_image_new.svg" alt="menu_image" onclick="openNav7()" class="sidmenu" id="menu_header"><h1 class="Headertext">Star Chart</h1>
+  </div>
+  <div>
+  <p class="headersubtext">by David Bach</p>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav7()">&times;</a>
+    <a href="homepage.html">Homepage</a>
+    <a href="astrophysiccalculator.html">Astro-physic-calculator</a>
+    <a href="weather.html">Weather</a>
+    <a href="dataprotection.html">Data Protection</a>
+    <a href="starsearch.html">Star Search</a>
+  </div>
+</head>
+<body class="everything" id="main">
+
+
+  <input type="number" class="astroskychartinput" value="47.73293569575534">
+  <input type="number" class="astroskychartinput" value="10.310926959509345">
+  <input type="date" class="astroskychartinput" value="2023-09-06">
+  <select id="astroskychartselectstyle">
+    <option value="inverted">Inverted</option>
+    <option value="red">Red</option>
+  </select>
+  <select id="astroskychartselectconstellation">
+    <option value="and">Andromeda</option>
+    <option value="ant">Antlia</option>
+    <option value="aps">Apus</option>
+    <option value="aqr">Aquarius</option>
+    <option value="aql">Aquila</option>
+    <option value="ara">Ara</option>
+    <option value="ari">Aries</option>
+    <option value="aur">Auriga</option>
+    <option value="boo">Boötes</option>
+    <option value="cae">Caelum</option>
+    <option value="cam">Camelopardalis</option>
+    <option value="cnc">Cancer</option>
+    <option value="cvn">Canes Venatici</option>
+    <option value="cma">Canis Major</option>
+    <option value="cmi">Canis Minor</option>
+    <option value="cap">Capricornus</option>
+    <option value="car">Carina</option>
+    <option value="cas">Cassiopeia</option>
+    <option value="cen">Centaurus</option>
+    <option value="cep">Cepheus</option>
+    <option value="cet">Cetus</option>
+    <option value="cha">Chamaeleon</option>
+    <option value="cir">Circinus</option>
+    <option value="col">Columba</option>
+    <option value="com">Coma Berenices</option>
+    <option value="cra">Corona Austrina</option>
+    <option value="crb">Corona Borealis</option>
+    <option value="crv">Corvus</option>
+    <option value="crt">Crater</option>
+    <option value="cru">Crux</option>
+    <option value="cyg">Cygnus</option>
+    <option value="del">Delphinus</option>
+    <option value="dor">Dorado</option>
+    <option value="dra">Draco</option>
+    <option value="equ">Equuleus</option>
+    <option value="eri">Eridanus</option>
+    <option value="for">Fornax</option>
+    <option value="gem">Gemini</option>
+    <option value="gru">Grus</option>
+    <option value="her">Hercules</option>
+    <option value="hor">Horologium</option>
+    <option value="hya">Hydra</option>
+    <option value="hyi">Hydrus</option>
+    <option value="ind">Indus</option>
+    <option value="lac">Lacerta</option>
+    <option value="leo">Leo</option>
+    <option value="lmi">Leo Minor</option>
+    <option value="lep">Lepus</option>
+    <option value="lib">Libra</option>
+    <option value="lup">Lupus</option>
+    <option value="lyn">Lynx</option>
+    <option value="lyr">Lyra</option>
+    <option value="men">Mensa</option>
+    <option value="mic">Microscopium</option>
+    <option value="mon">Monoceros</option>
+    <option value="mus">Musca</option>
+    <option value="nor">Norma</option>
+    <option value="oct">Octans</option>
+    <option value="oph">Ophiuchus</option>
+    <option value="ori">Orion</option>
+    <option value="pav">Pavo</option>
+    <option value="peg">Pegasus</option>
+    <option value="per">Perseus</option>
+    <option value="phe">Phoenix</option>
+    <option value="pic">Pictor</option>
+    <option value="psc">Pisces</option>
+    <option value="psa">Piscis Austrinus</option>
+    <option value="pup">Puppis</option>
+    <option value="pyx">Pyxis</option>
+    <option value="ret">Reticulum</option>
+    <option value="sge">Sagitta</option>
+    <option value="sgr">Sagittarius</option>
+    <option value="sco">Scorpius</option>
+    <option value="scl">Sculptor</option>
+    <option value="sct">Scutum</option>
+    <option value="ser">Serpens Cauda</option>
+    <option value="sex">Sextans</option>
+    <option value="tau">Taurus</option>
+    <option value="tel">Telescopium</option>
+    <option value="tri">Triangulum</option>
+    <option value="tra">Triangulum Australe</option>
+    <option value="tuc">Tucana</option>
+    <option value="uma">Ursa Major</option>
+    <option value="umi">Ursa Minor</option>
+    <option value="vel">Vela</option>
+    <option value="vir">Virgo</option>
+    <option value="vol">Volans</option>
+    <option value="Vul">Vulpecula</option>
+</select>
+
+<button id="astroskychartbuttonid">Generate</button>
+
+
+</body>
+<footer class="everythingfooter" id="footerid">
+  <div>
+  <a href="https://www.instagram.com/david_foto_official/" target="_blank" class="fa fa-instagram"></a> <a href="https://facebook.com/profile.php/?id=100084508481349" target="_blank" class="fa fa-facebook"></a>
+  </div>
+  <div class="logoetc">
+    <a href="Homepage.html">
+      <img src="../images/david_foto_official_logo.jpg" alt="Logo" class="footerlogo"></a> <p class="informationfooter">This is an astronomy website, created by David Bach. There are subsites like astro-physics and weather.</p>
+      </br>
+      </br>
+      <p class="copyright">Copyright © 2023 David Bach</p>
+      <p class="allrights">All rights reserved</p>
+  </div>
+</footer>
+</html>

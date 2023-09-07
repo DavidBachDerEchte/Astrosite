@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="website">
+  <head class="headerclass">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/stylesMain.css" />
+    <link rel="stylesheet" href="../css/styleapc.css">
+    <script src="../js/scriptapc.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Astro-physics-calculator | Astro Website</title>
+
+
+
+    <div class="ueberschrift">
+      <img src="../images/menu_image_new.svg" alt="menu_image" onclick="openNav()" class="sidmenu" id="menu_header"><h1 class="headertext">Astro Physics Calculator</h1>
+    </div>
+    <div>
+      <p class="titleeffect">
+        This is a astro-physics-calculator, <br />
+        created by David Bach.
+      </p>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="homepage.html" class="homepagelink">Homepage</a>
+      <a href="weather.html">Weather</a>
+      <a href="dataprotection.html">Data Protection</a>
+      <a href="starsearch.html">Star Search</a>
+      <a href="starchart.html">Star Chart</a>
+      <a>──────────</a>
+      <a href="#bascalc" class="b">Basic Calculation</a>
+      <a href="#escvel">Escape Velocity</a>
+      <a href="#surare">Surface Area - Star</a>
+      <a href="#spaang">Spatial Angle</a>
+      <a href="#diofsora">Distribution of Solar Radiation</a>
+
+
+    </div>
+  </head>
+  <body class="everything" id="main">
+
+    <div class="gridItem twoRows">
+      <img src="../images/sidepicture1.jpg" loading="lazy" class="sidepicture fullGrid" data-src="../images/sidepicture1.jpg">
+      <p class="basiccalculations" id="bascalc">Basic calculations</p>
+
+      <div class="gridBody" >
+        <p class="Converttoscientificnotation">Convert to scientific notation</p>
+  
+        <p class="Textdecimalnum">Decimal number</p>
+        <input class="inputbox3" type="number" id="numberInputdecimal1" />
+  
+        <button onclick="CTSNFunction()">Convert</button>
+  
+        <div class="convertresult" id="resulconv1"></div>
+        <div class="convertnumresult" id="resulconv2"></div>
+      </div>
+  
+      <div class="gridBody row2">
+        <p class="Converttodecimalnumber">Convert to decimal number</p>
+        <p class="infotexta">
+          (Info: It can only convert up to e-/+20; anything above that cannot be
+          converted..)
+        </p>
+  
+        <p class="Textscientificnotationnum">Scientific notation</p>
+        <input
+          class="inputbox4"
+          type="number"
+          id="numberInputscientificnotation1"
+        />
+  
+        <button onclick="CTDNFunction()">Convert</button>
+  
+        <div class="convertresult1" id="resulconv3"></div>
+        <div class="convertnumresult1" id="resulconv4"></div>
+      </div>
+    </div>
+
+    <div class="gridItem">
+      <img src="../images/sidepicture2.jpg" loading="lazy" class="sidepicture" data-src="../images/sidepicture1.jpg">
+      <p class="escapevelocityovertitel" id="escvel">Escape Velocity</p>
+
+      <div class="gridBody">
+        <p class="infotext">
+          (Info: only decimal number or numbers with e-/+ [number] like
+          x10^(number).)
+        </p>
+  
+        <p class="TextforMassObject">Mass of object in kg.</p>
+        <input class="inputbox1" type="number" id="numberInput1" />
+  
+        <p class="TextforradiusObject">Radius of object in meter.</p>
+        <input class="inputbox2" type="number" id="numberInput2" />
+  
+        <button onclick="EVfunction()">Calculate</button>
+  
+        <div class="finalresultescapevelocity" id="result1"></div>
+        <div class="finalresultescapevelocitynumber" id="result2"></div>
+        <br />
+  
+        <div class="finalresultescapevelocityconvert" id="result3"></div>
+        <div class="finalresultescapevelocityconvernumber" id="result4"></div>
+        <br />
+  
+        <div class="finalresultescapevelocityrounded" id="result5"></div>
+        <div class="finalresultescapevelocityroundednumber" id="result6"></div>
+      </div>
+    </div>
+
+    <div class="gridItem">
+      <img src="../images/sidepicture3.jpg" loading="lazy" class="sidepicture" data-src="../images/sidepicture1.jpg">
+      <p class="surfaceareastarovertitel gridTitle" id="surare">Surface Area - Star</p>
+      <div class="gridBody">
+        <p class="TextforradiusObject">Radius of object.</p>
+        <input class="surfaceareastarinput2" type="number" id="numberInputsurarst2" />
+  
+        <button onclick="flaecheninhaltstarnfunction()">Calculate</button>
+  
+        <div class="finalresultsurarst1" id="resultsurarst1"></div>
+        <div class="finalresultsurarst2" id="resultsurarst2"></div>
+      </div>
+    </div>
+
+    <div class="gridItem">
+      <p class="spatialangleovertitel gridTitle" id="spaang">Spatial Angle</p>
+
+      <div class="gridBody">
+        <p class="TextforfaecheninhaltObject">Surface area of object.</p>
+        <input class="spatialangleinput1" type="number" id="numberInputspatialangle1" />
+  
+        <p class="TextforradiusObject">Radius of object.</p>
+        <input class="spatialangleinput2" type="number" id="numberInputspatialangle2" />
+  
+        <button onclick="spatialanglefunction()">Calculate</button>
+  
+        <div class="finalresultspatialangle1" id="finalresultspatialangle1"></div>
+        <div class="finalresultspatialangle2" id="finalresultspatialangle2"></div>
+      </div>
+    </div>
+
+    <div class="gridItem">
+      <img src="../images/sidepicture4.jpg" loading="lazy" class="sidepicture" data-src="../images/sidepicture1.jpg">
+      <p class="DOSRovertitel" id="diofsora">Distribution of Solar Radiation</p>
+      <div class="DOSRa gridBody">
+        <p class="TextfordistanceinAUObject">Distance of object in AU.</p>
+        <input class="DOSRinput2" type="number" id="numberInputDOSR2" />
+  
+        <button onclick="DOSRfunction()">Calculate</button>
+  
+        <div class="finalresultDOSR1" id="finalresultDOSR1"></div>
+        <div class="finalresultDOSR2" id="finalresultDOSR2"></div>
+      </div>
+    </div>
+
+  </body>
+  <footer class="everythingfooter" id="footerid">
+    <div>
+    <a href="https://www.instagram.com/david_foto_official/" target="_blank" class="fa fa-instagram"></a> <a href="https://facebook.com/profile.php/?id=100084508481349" target="_blank" class="fa fa-facebook"></a>
+    </div>
+    <div class="logoetc">
+      <a href="Homepage.html">
+        <img src="../images/david_foto_official_logo.jpg" alt="Logo" class="footerlogo"></a> <p class="informationfooter">This is an astronomy website, created by David Bach. There are subsites like astro-physics and weather.</p>
+        </br>
+        </br>
+        <p class="copyright">Copyright © 2023 David Bach</p>
+        <p class="allrights">All rights reserved</p>
+    </div>
+</footer>
+</html>
