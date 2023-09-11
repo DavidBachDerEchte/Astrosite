@@ -1,0 +1,392 @@
+.basiccalculations {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.escapevelocityovertitel {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.surfaceareastarovertitel {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.spatialangleovertitel {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.gridItem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    padding: 10px;
+}
+
+.gridItemNoImg {
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.twoRows {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.fullGrid {
+    grid-area: 1 / 1 / 4 / 2 !important;
+}
+
+.row2 {
+    grid-area: 3 / 2 / 4 / 3 !important;
+}
+
+.gridTitle {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.DOSRovertitel {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.Escapevelositytitel {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.infotext {
+    margin-top: 0;
+    margin-left: 200px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.TextforMassObject {
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.inputbox1 {
+    margin-left: 10px;
+}
+
+.inputbox2 {
+    margin-left: 10px;
+}
+
+.Escapevelosity {
+    margin-left: 10px;
+    margin-right: 60%;
+    box-shadow: 0 0 0 5px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    left: -75%;
+    transform: translate(75%);
+}
+
+/*Final result*/
+
+.finalresultescapevelocity {
+    margin-left: 10px;
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.finalresultescapevelocitynumber {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.finalresultescapevelocityconvert {
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.finalresultescapevelocityconvernumber {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.finalresultescapevelocityrounded {
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.finalresultescapevelocityroundednumber {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/*Convert to Scientific notation*/
+
+.Converttoscientificnotation {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.Textdecimalnum {
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 43px;
+    margin-bottom: 5px;
+}
+
+.inputbox3 {
+    margin-left: 10px;
+}
+
+.convertresult {
+    margin-left: 10px;
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.convertnumresult {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.Converttoscientificnotationa {
+    margin-left: 10px;
+    margin-right: 60%;
+    box-shadow: 0 0 0 5px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    left: -75%;
+    transform: translate(75%);
+}
+
+/*Convert to decimal number*/
+
+.Converttodecimalnumber {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.Textscientificnotationnum {
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 43px;
+    margin-bottom: 5px;
+}
+
+.inputbox4 {
+    margin-left: 10px;
+}
+
+.convertresult1 {
+    margin-left: 10px;
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.convertnumresult1 {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.Converttodecimalnumbera {
+    margin-left: 10px;
+    margin-right: 60%;
+    box-shadow: 0 0 0 5px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    left: -75%;
+    transform: translate(75%);
+
+}
+
+.infotexta {
+    margin-top: 0;
+    margin-left: 200px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+/*Surface Area*/
+
+.surfaceareastara {
+    margin-left: 10px;
+    margin-right: 60%;
+    box-shadow: 0 0 0 5px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    left: -75%;
+    transform: translate(75%);
+}
+
+
+.surfaceareastartitel {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.surfaceareastarinput2 {
+    margin-left: 10px;
+}
+
+.finalresultsurarst1 {
+    margin-left: 10px;
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.finalresultsurarst2 {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/*Spatial Angle*/
+
+.spatialanglea {
+    margin-left: 10px;
+    margin-right: 60%;
+    box-shadow: 0 0 0 5px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    left: -75%;
+    transform: translate(75%);
+}
+
+
+.spatialangletitel {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.TextforradiusObject {
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.TextforfaecheninhaltObject {
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.spatialangleinput1 {
+    margin-left: 10px;
+}
+
+.spatialangleinput2 {
+    margin-left: 10px;
+}
+
+.finalresultspatialangle1 {
+    margin-left: 10px;
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.finalresultspatialangle2 {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/*distribution of solar radiation*/
+
+.gridBody {
+    border: 5px solid #2b2d30;
+    border-radius: 5px;
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+
+    & :is(p, input) {
+        margin: 0;
+    }
+}
+
+
+.DOSRtitel {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.TextfordistanceinAUObject {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: left;
+    margin: 0;
+}
+
+
+.finalresultDOSR1 {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.finalresultDOSR2 {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 1000px) {
+    .sidepicture {
+        visibility: hidden;
+    }
+}

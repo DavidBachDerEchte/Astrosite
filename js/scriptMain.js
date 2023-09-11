@@ -22,9 +22,9 @@ navMenuIconButton.addEventListener("click", function () {
         document.body.prepend(overlay);
 
     } else {
-        if (window.innerWidth <= 515) return;
         window.onscroll = function () { }
         document.querySelector("html").style.scrollBehavior = "";
+        if (window.innerWidth <= 515) return;
         document.querySelector(".overlay").remove();
     }
 })
@@ -40,30 +40,51 @@ document.addEventListener("click", (event) => {
     }
 })
 
-
-
+const windowprefertscheme = window.matchMedia('(prefers-color-scheme: light)');
 const themeSwitchDark = document.querySelector(".theme-switch__checkbox");
 
 themeSwitchDark.addEventListener("change", () => {
+    nav.style.transition = "none"
+    setTimeout(() => {
+        nav.style.transition = ""
+    }, 10)
+})
+
+if (windowprefertscheme.matches) {
     const htmlElement = document.querySelector("html");
-    if (htmlElement.hasAttribute("data-theme")) {
-        const currentTheme = htmlElement.getAttribute("data-theme");
-        if (currentTheme === "dark") {
-            htmlElement.removeAttribute("data-theme", "dark");
+    htmlElement.setAttribute("data-theme", "light");
+    themeSwitchDark.addEventListener("change", () => {
+        if (htmlElement.hasAttribute("data-theme")) {
+            const currentTheme = htmlElement.getAttribute("data-theme");
+            if (currentTheme === "dark") {
+                htmlElement.removeAttribute("data-theme", "dark");
+                htmlElement.setAttribute("data-theme", "light");
+            } else {
+                htmlElement.setAttribute("data-theme", "dark");
+            }
         } else {
             htmlElement.setAttribute("data-theme", "dark");
         }
-    } else {
-        htmlElement.setAttribute("data-theme", "dark");
-    }
-});
+    });
+}
 
+if (windowprefertscheme.matches === false) {
+    const htmlElement = document.querySelector("html");
+    htmlElement.setAttribute("data-theme", "dark");
+    themeSwitchDark.setAttribute("checked", "true");
+    themeSwitchDark.addEventListener("change", () => {
+        if (htmlElement.hasAttribute("data-theme")) {
+            const currentTheme = htmlElement.getAttribute("data-theme");
+            if (currentTheme === "light") {
+                htmlElement.removeAttribute("data-theme", "light");
+                htmlElement.setAttribute("data-theme", "dark");
+            } else {
+                htmlElement.setAttribute("data-theme", "light");
+            }
+        } else {
+            htmlElement.setAttribute("data-theme", "light");
+        }
+    });
 
-
-
-
-
-
-
-
+}
 
