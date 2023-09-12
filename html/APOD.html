@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styleMain.css">
-    <link rel="stylesheet" href="../css/styleStarSearch.css">
+    <link rel="stylesheet" href="../css/styleAPOD.css">
     <script src="../js/scriptMain.js" defer></script>
-    <script src="../js/scriptStarSearch.js" defer></script>
-    <title>Star Search | Astro Website</title>
+    <script src="../js/scriptAPOD.js" defer></script>
+    <title>Astronomy Picture of the Day | Astro Website</title>
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -37,16 +37,16 @@
                 <a href="/html/Weather.html">Weather</a>
             </li>
             <li>
-                <a href="/html/AstroPhysicCalcuatior.html">Astro-physic-calcuatior</a>
+                <a href="/html/AstroPhysicCalcuatior.html">Astro-physic-calculator</a>
+            </li>
+            <li>
+                <a href="/html/StarSearch.html">Star Search</a>
             </li>
             <li>
                 <a href="/html/StarChart.html">Star Chart</a>
             </li>
             <li>
                 <a href="/html/MarsGallery.html">Mars Gallery</a>
-            </li>
-            <li>
-                <a href="/html/APOD.html">Astronomy Picture of the Day</a>
             </li>
             <li>
                 <label class="theme-switch">
@@ -76,41 +76,19 @@
     </nav>
 
     <h1 class="description">
-        Star Search
+        Astronomy Picture of the Day
         <span id="covershadow"></span>
     </h1>
 
     <main>
-
-
-        <form class="form">
-            <button id="runastroapi">
-                <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
-                    class="serach-icon" aria-labelledby="search">
-                    <path stroke="#fff"
-                        d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
-                        stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round">
-                    </path>
-                    <style>
-                        html[data-theme="dark"] .serach-icon path {
-                            stroke: #2d2b30;
-                        }
-                    </style>
-                </svg>
-            </button>
-            <input class="input" placeholder="Type your text" type="text" id="astrosearchinput" />
-            <button class="reset" type="reset">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" class="clear-search" height="24" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                    <style>
-                        html[data-theme="dark"] .clear-search path {
-                            stroke: #2d2b30;
-                        }
-                    </style>
-                </svg>
-            </button>
-        </form>
+        <button id="APODRunApi"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path fill="currentColor"
+                    d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z">
+                </path>
+            </svg>
+            <span>Load</span>
+        </button>
 
         <div class="dot-spinner">
             <div class="dot-spinner__dot"></div>
@@ -123,35 +101,8 @@
             <div class="dot-spinner__dot"></div>
         </div>
 
-        <table class="tableeverything" id="starTable">
-            <tr class="tableheadertext">
-                <th>Catalog</th>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Constellation</th>
-                <th>Right Ascension</th>
-                <th>Declination</th>
-            </tr>
-            <tr class="tablebodytext1">
-                <td id="catalogHD">XXXXXX</td>
-                <td id="Objectname">XXXXXX</td>
-                <td id="Objecttype">XXXXX</td>
-                <td id="Objectconstellationname">XXXXXXX</td>
-                <td id="Objectrightascension">00° 00' 00.00"</td>
-                <td id="Objectdeclination">00h 00m 00.00s</td>
-            </tr>
-
-            <tr class="tablebodytext2">
-                <td id="catalogHIP">XXXXXX</td>
-            </tr>
-
-            <tr class="tablebodytext3">
-                <td id="catalogHR">XXXXXX</td>
-            </tr>
-        </table>
-
-
-
+        <div id="apodpic" class="apodpicfotos">
+        </div>
     </main>
 
     <footer>

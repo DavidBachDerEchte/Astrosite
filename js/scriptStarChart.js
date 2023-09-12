@@ -11,6 +11,9 @@ runAstroApi.addEventListener("click", async function (event) {
     const latitude = inputs[1].value;
     const date = inputs[2].value;
 
+    const loadingicona = document.querySelector(".dot-spinner");
+    loadingicona.style.display = "flex";
+
     let inputData = {
         "style": document.getElementById("astroskychartselectstyle").value,
         "observer": {
@@ -46,6 +49,9 @@ runAstroApi.addEventListener("click", async function (event) {
         return;
     }
 
+
+    loadingicona.style.display = "none";
+
     const img = document.createElement("img");
     img.src = data.data.imageUrl;
     img.className = "astroskychartimg";
@@ -58,6 +64,7 @@ runAstroApi.addEventListener("click", async function (event) {
 
 
     return astroApiResponse;
+
 });
 
 function checkAndSetToNull(obj) {

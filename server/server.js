@@ -32,7 +32,13 @@ app.post("/weather", async (req, res) => {
     const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${process.env.API_KEY}&q=${location}&aqi=yes`)
 
     const data = await response.json();
-    console.log(data);
+
+
+
+    if (data.error) {
+        res.json({ error: "failed to fetch" });
+        return;
+    }
 
     const inputDate = data.location.localtime;
     const date = new Date(inputDate);
@@ -77,7 +83,7 @@ app.post("/astrostarsearch", async (req, res) => {
 
     const data = await response.json();
 
-    console.log(data);
+
 
     res.json(data)
 })
@@ -108,18 +114,62 @@ app.post("/astrostarchart", async (req, res) => {
 
     const data = await response.json();
 
-    if (data.error) {
-        console.log(data.error);
-        res.json({ error: data.error });
-        return;
-    }
-    console.log(data);
 
     res.json(data)
 })
 
+
+
+// AstroMarsGallery api
+
+app.post("/astromarsgallery", async (req, res) => {
+    const date = req.body.date;
+    try {
+        const response = await fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${date}&api_key=${process.env.NASA_API_KEY}`, {
+            method: "GET",
+        });
+
+        if (!response.ok) {
+            throw new Error("Fetch request failed");
+        }
+
+        const data = await response.json();
+        res.json(data);
+
+
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: "Internal server error" });
+    }
+});
+
+
+// AstroAPOD api
+
+app.post("/astroapod", async (req, res) => {
+    try {
+        const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${process.env.NASA_API_KEY}`, {
+            method: "GET",
+        });
+
+        if (!response.ok) {
+            throw new Error("Fetch request failed");
+        }
+
+        const data = await response.json();
+
+
+        res.json(data);
+
+
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: "Internal server error" });
+    }
+});
+
+
+
 httpsServer.listen(3000, () => {
     console.log("server started on port 3000");
 })
-
-

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/styleMain.css">
     <link rel="stylesheet" href="../css/stylesAPC.css">
     <script src="../js/scriptMain.js" defer></script>
-    <script src="../js/scriptAPC"></script>
+    <script src="../js/scriptAPC.js" defer></script>
     <title>Astro-physics-calculator | Astro Website</title>
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -34,13 +34,16 @@
                 <a href="/index.html">Homepage</a>
             </li>
             <li>
-                <a href="#">Weather</a>
+                <a href="/html/Weather.html">Weather</a>
             </li>
             <li>
-                <a href="#">Star Search</a>
+                <a href="/html/AstroPhysicCalcuatior.html">Astro-physic-calculator</a>
             </li>
             <li>
-                <a href="#">Star Chart</a>
+                <a href="/html/StarSearch.html">Star Search</a>
+            </li>
+            <li>
+                <a href="/html/StarChart.html">Star Chart</a>
             </li>
             <li>
                 <label class="theme-switch">

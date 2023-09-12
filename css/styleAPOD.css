@@ -1,92 +1,47 @@
-.beautiful-button {
-    position: relative;
-    display: inline-block;
-    font-family: "Segoe UI", sans-serif;
-    font-weight: bold;
-    font-size: 18px;
+button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     border: none;
-    border-radius: 30px;
-    padding: 14px 28px;
-    cursor: pointer;
-}
-
-
-.beautiful-button:active {
-    transform: scale(0.95);
-}
-
-.Star_Chart_Picture {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-@keyframes button-shimmer {
-    0% {
-        background-position: left top;
-    }
-
-    100% {
-        background-position: right bottom;
-    }
-}
-
-@keyframes button-particles {
-    0% {
-        background-position: left top;
-    }
-
-    100% {
-        background-position: right bottom;
-    }
-}
-
-maina {
-    text-align: center;
     margin-top: 20px;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
 }
 
-.mainasecondline {
-    margin-top: 10px;
+button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
-.Generatebutton {
-    margin-top: 10px;
+button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
-
-.inputstarchart {
-    max-width: 190px;
-    padding: .15rem .5rem;
-    min-height: 40px;
-    border-radius: 4px;
-    outline: none;
-    border: none;
-    line-height: 1.15;
-    box-shadow: 0px 10px 20px -18px;
+button:hover svg {
+    transform: translateX(5px) rotate(90deg);
 }
 
-.inputstarchart:focus {
-    border-radius: 4px 4px 2px 2px;
+button:hover span {
+    transform: translateX(7px);
 }
 
-.inputstarchart:hover {
-    outline: 1px solid lightgrey;
+.apodpicfotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media screen and (max-width: 870px) {
-
-    .Star_Chart_Picture {
-        transform: scale(.9);
-    }
-
-    maina {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
+.APODImage {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
 
 /*Loading*/
 

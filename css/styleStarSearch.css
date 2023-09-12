@@ -1,90 +1,41 @@
-.beautiful-button {
-    position: relative;
-    display: inline-block;
-    font-family: "Segoe UI", sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 30px;
-    padding: 14px 28px;
-    cursor: pointer;
+/*Table*/
+
+table,
+td,
+th {
+    border: 1px solid;
 }
 
-
-.beautiful-button:active {
-    transform: scale(0.95);
+table {
+    border-collapse: collapse;
 }
 
-.Star_Chart_Picture {
+.tableheadertext {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.tablebodytext1 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.tablebodytext2 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.tablebodytext3 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.tableeverything {
+    display: none;
+    visibility: hidden;
     margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-@keyframes button-shimmer {
-    0% {
-        background-position: left top;
-    }
-
-    100% {
-        background-position: right bottom;
-    }
-}
-
-@keyframes button-particles {
-    0% {
-        background-position: left top;
-    }
-
-    100% {
-        background-position: right bottom;
-    }
-}
-
-maina {
+    width: 85%;
     text-align: center;
-    margin-top: 20px;
-}
-
-.mainasecondline {
-    margin-top: 10px;
-}
-
-.Generatebutton {
-    margin-top: 10px;
-}
-
-
-.inputstarchart {
-    max-width: 190px;
-    padding: .15rem .5rem;
-    min-height: 40px;
-    border-radius: 4px;
-    outline: none;
-    border: none;
-    line-height: 1.15;
-    box-shadow: 0px 10px 20px -18px;
-}
-
-.inputstarchart:focus {
-    border-radius: 4px 4px 2px 2px;
-}
-
-.inputstarchart:hover {
-    outline: 1px solid lightgrey;
-}
-
-@media screen and (max-width: 870px) {
-
-    .Star_Chart_Picture {
-        transform: scale(.9);
-    }
-
-    maina {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
 }
 
 
@@ -197,4 +148,55 @@ maina {
         transform: scale(1);
         opacity: 1;
     }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .tablebodytext1,
+    .tablebodytext2,
+    .tablebodytext3 {
+        font-size: 13px;
+    }
+
+    .tableheadertext {
+        font-size: 16px;
+    }
+
+    .tableeverything {
+        width: 95% !important;
+    }
+
+    .form {
+        transform: scale(1.2) !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .tablebodytext1,
+    .tablebodytext2,
+    .tablebodytext3 {
+        font-size: 10px;
+    }
+
+    .tableheadertext {
+        font-size: 12px;
+    }
+
+    .tableeverything {
+        width: 95% !important;
+    }
+
+    .form {
+        transform: scale(1) !important;
+    }
+}
+
+@media screen and (min-width: 1310px) {
+
+    .tableeverything {
+        width: 85% !important;
+    }
+
 }

@@ -44,6 +44,11 @@ html[data-theme="light"]>body {
         border-bottom: 2px solid #2b2d30;
     }
 
+    .astromarsgalleyinput {
+        border-color: #2b2d30;
+        background: white;
+    }
+
 }
 
 html[data-theme="dark"] {
@@ -87,6 +92,7 @@ html[data-theme="dark"] {
     .inputstarchart:focus {
         border-bottom: 2px solid #ffffff;
     }
+
 
 
 }

@@ -1,5 +1,9 @@
 const runSearch = document.getElementById("runApi");
 const inputCity = document.getElementById("locationinputid");
+
+
+
+
 runSearch.addEventListener("click", async (event) => {
     event.preventDefault();
     const value = inputCity.value;
@@ -18,28 +22,56 @@ runSearch.addEventListener("click", async (event) => {
 
     const data = await result.json();
 
-    const timeElement = document.getElementById("time");
-    timeElement.textContent = data.localtime;
 
-    const locname = document.getElementById("locationname");
-    locname.textContent = data.name;
+    const card = document.querySelector(".card");
+    const container = card.querySelector(".container");
+    const resulta = card.querySelector("#result");
+    const errora = card.querySelector(".Error");
+    const p3 = document.createElement('h2');
 
-    const condition = document.getElementById("condition");
-    condition.textContent = data.condition;
+    if (data.error) {
 
-    const icon = document.getElementById("weathericon");
-    icon.src = data.icon;
 
-    const temp = document.getElementById("temp");
-    temp.textContent = data.temp + "°C";
+        if (container) {
+            container.style.display = 'none';
+        }
+        if (resulta) {
+            resulta.style.display = 'none';
+        }
 
-    const wind_degree = document.getElementById("wind_degree");
-    wind_degree.textContent = "Wind direction: " + data.wind_degree + "°";
+        p3.textContent = "Failed to fetch";
+        p3.classList.add('Error');
+        card.appendChild(p3);
+    } else {
 
-    const wind = document.getElementById("wind");
-    wind.textContent = "Wind speed: " + data.wind + " km/h";
+        errora.remove();
+        container.style.display = 'block';
+        resulta.style.display = 'block';
 
-    const humidity = document.getElementById("humidity");
-    humidity.textContent = "Humidity: " + data.humidity + " %";
+
+        const timeElement = document.getElementById("time");
+        timeElement.textContent = data.localtime;
+
+        const locname = document.getElementById("locationname");
+        locname.textContent = data.name;
+
+        const condition = document.getElementById("condition");
+        condition.textContent = data.condition;
+
+        const icon = document.getElementById("weathericon");
+        icon.src = data.icon;
+
+        const temp = document.getElementById("temp");
+        temp.textContent = data.temp + "°C";
+
+        const wind_degree = document.getElementById("wind_degree");
+        wind_degree.textContent = "Wind direction: " + data.wind_degree + "°";
+
+        const wind = document.getElementById("wind");
+        wind.textContent = "Wind speed: " + data.wind + " km/h";
+
+        const humidity = document.getElementById("humidity");
+        humidity.textContent = "Humidity: " + data.humidity + " %";
+    }
 
 })

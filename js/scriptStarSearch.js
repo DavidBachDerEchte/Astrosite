@@ -21,6 +21,9 @@ runAstroApi.addEventListener("click", async function (event) {
 
     document.getElementById("astrosearchinput").value = "";
 
+    const loadingicona = document.querySelector(".dot-spinner");
+    loadingicona.style.display = "flex";
+
     astroApiResponse = {};
     const response = await fetch("https://localhost:3000/astrostarsearch", {
         method: "POST",
@@ -40,6 +43,10 @@ runAstroApi.addEventListener("click", async function (event) {
         console.log(data.error);
         return;
     }
+
+
+    loadingicona.style.display = "none";
+
 
     data = data.data[0];
 
