@@ -23,7 +23,7 @@
         <div class="logo-wrap">
             <a href="/index.html"><img src="../Images/richtige/david_foto_official_logo.jpg" alt="Logo"
                     class="logo"></a>
-            <h2>Astro Site</h2>
+            <a href="/index.html" class="header-logo">Astro Site</a>
         </div>
         <div class="menu-icon"></div>
     </header>
@@ -34,19 +34,20 @@
                 <a href="/index.html">Homepage</a>
             </li>
             <li>
-                <a href="/html/Weather.html">Weather</a>
+                <span id="toggleMenuTools" class="navSpanColor">Astronomical tools and entertainment</span>
+                <ul id="subMenu">
+                    <li><a href="/html/Weather.html">Weather</a></li>
+                    <li><a href="/html/AstroPhysicCalcuatior.html">Astro-physic-calculator</a></li>
+                    <li><a href="/html/StarSearch.html">Star Search</a></li>
+                    <li><a href="/html/StarChart.html">Star Chart</a></li>
+                    <li><a href="/html/APOD.html">Astronomy Picture of the Day</a></li>
+                </ul>
             </li>
             <li>
-                <a href="/html/AstroPhysicCalcuatior.html">Astro-physic-calculator</a>
-            </li>
-            <li>
-                <a href="/html/StarSearch.html">Star Search</a>
-            </li>
-            <li>
-                <a href="/html/StarChart.html">Star Chart</a>
-            </li>
-            <li>
-                <a href="/html/APOD.html">Astronomy Picture of the Day</a>
+                <span id="toggleMenuInformation" class="navSpanColor">Information</span>
+                <ul id="subMenu">
+                    <li><a href="/html/CMB.html">Cosmic Microwave Background</a></li>
+                </ul>
             </li>
             <li>
                 <label class="theme-switch">
@@ -82,7 +83,7 @@
 
     <mainb>
 
-        <label for="datemarsgallery">Earliest photo query from 2 days ago.</label>
+        <label for="datemarsgallery" class="infolabel">Earliest photo query from 2 days ago.</label>
         <input type="date" class="astromarsgalleyinput" id="datemarsgallery">
         <button id="MarsGalleryRunApi"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
                 height="24">
@@ -94,10 +95,14 @@
             <span>Load</span>
         </button>
 
+        <div class="Mars-Gallery-Error" id="Mars-Gallery-Errorid">
+            <h2>Please select a date from two days ago.</h2>
+        </div>
+
         <div id="mpic" class="marspicturefotos">
         </div>
 
-        <div>
+        <div class="GO-Back-Up-Class">
             <img src="../Images/richtige/gobackup.png" alt="Go Back Up" class="gobackupbutton">
         </div>
 

@@ -9,6 +9,11 @@
 
 }
 
+.Mars-Gallery-Error {
+    margin-top: 20px;
+    visibility: hidden;
+}
+
 img {
     max-width: 306px;
 }
@@ -20,6 +25,12 @@ mainb {
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+mainb .GO-Back-Up-Class {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
 }
 
 .gobackupbutton {

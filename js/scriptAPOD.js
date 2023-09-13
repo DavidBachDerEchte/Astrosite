@@ -1,6 +1,4 @@
-const runAPODApi = document.getElementById("APODRunApi");
-
-runAPODApi.addEventListener("click", async function (event) {
+document.addEventListener("DOMContentLoaded", async function (event) {
     event.preventDefault();
 
     const loadingicona = document.querySelector(".dot-spinner");
@@ -23,7 +21,6 @@ runAPODApi.addEventListener("click", async function (event) {
         loadingicona.style.display = "none";
 
         const data = await response.json();
-        console.log(data);
 
         const imageContainer = document.getElementById('apodpic');
 
@@ -36,7 +33,7 @@ runAPODApi.addEventListener("click", async function (event) {
 
         const p3 = document.createElement('h2');
         p3.textContent = data.title;
-        p3.classList.add('APODEX');
+        p3.classList.add('APODTITle');
         imageContainer.appendChild(p3);
 
         const p2 = document.createElement('p');

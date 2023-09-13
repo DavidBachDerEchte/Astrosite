@@ -1,6 +1,7 @@
 const navMenuIconButton = document.querySelector(".menu-icon");
 const nav = document.querySelector("nav");
 
+
 const scrollPos = { x: "", y: "" };
 
 navMenuIconButton.addEventListener("click", function () {
@@ -87,4 +88,18 @@ if (windowprefertscheme.matches === false) {
     });
 
 }
+
+// ########## Nav toggle links ############
+
+const toggleMenuTools = document.querySelector("#toggleMenuTools");
+const toggleMenuInformation = document.querySelector("#toggleMenuInformation");
+
+const elements = [toggleMenuTools, toggleMenuInformation];
+
+
+elements.forEach((element) => {
+    element.addEventListener("click", () => {
+        element.nextElementSibling.classList.toggle("showList");
+    })
+})
 

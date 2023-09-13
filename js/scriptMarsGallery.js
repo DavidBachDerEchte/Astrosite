@@ -1,11 +1,38 @@
+function rerrorhide() {
+    const errormessage1 = document.getElementById('Mars-Gallery-Errorid');
+    errormessage1.style.visibility = 'hidden';
+}
+
+function rerrorshow() {
+    const errormessage2 = document.getElementById('Mars-Gallery-Errorid');
+    errormessage2.style.visibility = 'visible';
+}
+
+function rerrorhidepics() {
+    const errormessage1 = document.getElementById('mpic');
+    errormessage1.style.visibility = 'hidden';
+}
+
+function rerrorshowpics() {
+    const errormessage2 = document.getElementById('mpic');
+    errormessage2.style.visibility = 'visible';
+}
+
 const runMarsGalleryApi = document.getElementById("MarsGalleryRunApi");
 
 runMarsGalleryApi.addEventListener("click", async function (event) {
     event.preventDefault();
 
+    const dateInput = document.getElementById("datemarsgallery");
+    const date = dateInput.value;
 
-    const date = document.getElementById("datemarsgallery").value;
+    const currentDate = new Date().toISOString().split('T')[0];
 
+    if (date > currentDate) {
+        rerrorhidepics();
+        rerrorshow();
+        return;
+    }
 
     try {
         const response = await fetch("https://localhost:3000/astromarsgallery", {
@@ -14,8 +41,8 @@ runMarsGalleryApi.addEventListener("click", async function (event) {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                date: date || "2015-6-3"
-            })
+                date: date || "2022-06-01",
+            }),
         });
 
         if (!response.ok) {
@@ -24,9 +51,10 @@ runMarsGalleryApi.addEventListener("click", async function (event) {
 
         const data = await response.json();
 
+        rerrorhide();
+        rerrorshowpics();
 
-        const imageContainer = document.getElementById('mpic');
-
+        const imageContainer = document.getElementById("mpic");
         imageContainer.innerHTML = '';
 
         for (const photo of data.photos) {
@@ -38,6 +66,7 @@ runMarsGalleryApi.addEventListener("click", async function (event) {
     } catch (error) {
         console.error(error);
     }
+
 });
 
 const gobackupconst = document.querySelector(".gobackupbutton");

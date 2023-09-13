@@ -67,6 +67,7 @@ const authString = btoa(`${process.env.ASTRO_API_ID}:${process.env.ASTRO_API_SEC
 
 app.post("/astrostarsearch", async (req, res) => {
     const location = req.body.location;
+    console.log(location);
 
     if (location === undefined || location === null) {
         res.json({ error: "No location provided" });
@@ -94,7 +95,6 @@ app.post("/astrostarchart", async (req, res) => {
     const location = req.body;
     console.log(location);
 
-    //const stringData = `{\"style\":\"${location.style}\\",\"observer\":{\"latitude\":${location.observer.latitude},\"longitude\":${location.observer.longitude},\"date\":\"${location.observer.date}\"},\"view\":{\"type\":\"constellation\",\"parameters\":{\"constellation\":\"${location.view.parameters.constellation}\"}}};`;
 
     if (location === undefined || location === null) {
         console.log("No location provided");

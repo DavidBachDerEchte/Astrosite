@@ -1,0 +1,48 @@
+.CMBImportantInfo {
+    margin-left: 40px;
+}
+
+mainCMB {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 20px 20px 30px 20px;
+}
+
+.Ueberschrift,
+.subUeberschrift {
+    text-align: center;
+}
+
+mainCMB p,
+mainCMB li {
+    font-size: 18px;
+}
+
+mainCMB h3 {
+    font-size: 23px;
+}
+
+.CMBImg {
+    float: right;
+    margin-right: 0;
+    width: 20%;
+}
+
+@media screen and (max-width: 1000px) {
+    .CMBImg {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .CMBImg {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .CMBImg {
+        width: 55%;
+    }
+}

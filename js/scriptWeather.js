@@ -1,3 +1,15 @@
+function rerrorhide() {
+    const errormessage1 = document.getElementById('card-errorid');
+    errormessage1.style.visibility = 'hidden';
+}
+
+function rerrorshow() {
+    const errormessage2 = document.getElementById('card-errorid');
+    errormessage2.style.visibility = 'visible';
+}
+
+
+
 const runSearch = document.getElementById("runApi");
 const inputCity = document.getElementById("locationinputid");
 
@@ -24,29 +36,19 @@ runSearch.addEventListener("click", async (event) => {
 
 
     const card = document.querySelector(".card");
-    const container = card.querySelector(".container");
-    const resulta = card.querySelector("#result");
-    const errora = card.querySelector(".Error");
-    const p3 = document.createElement('h2');
 
     if (data.error) {
 
 
-        if (container) {
-            container.style.display = 'none';
-        }
-        if (resulta) {
-            resulta.style.display = 'none';
+        if (card) {
+            card.style.display = 'none';
         }
 
-        p3.textContent = "Failed to fetch";
-        p3.classList.add('Error');
-        card.appendChild(p3);
+        rerrorshow();
     } else {
 
-        errora.remove();
-        container.style.display = 'block';
-        resulta.style.display = 'block';
+        rerrorhide();
+        card.style.display = 'block';
 
 
         const timeElement = document.getElementById("time");

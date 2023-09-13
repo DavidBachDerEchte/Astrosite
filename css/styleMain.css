@@ -44,9 +44,34 @@ html[data-theme="light"]>body {
         border-bottom: 2px solid #2b2d30;
     }
 
+    .inputplanetarychart {
+        background-color: #e0e0e0;
+        color: #2b2d30;
+    }
+
+    .inputplanetarychart:focus {
+        border-bottom: 2px solid #2b2d30;
+    }
+
     .astromarsgalleyinput {
         border-color: #2b2d30;
         background: white;
+    }
+
+    .infolabel {
+        color: #2b2d30;
+    }
+
+    .navSpanColor {
+        color: #2b2d30;
+    }
+
+    .tableeverything {
+        color: #2b2d30;
+    }
+
+    .gridBody {
+        border: 5px solid #2b2d30;
     }
 
 }
@@ -93,8 +118,30 @@ html[data-theme="dark"] {
         border-bottom: 2px solid #ffffff;
     }
 
+    .inputplanetarychart {
+        background-color: #ffffff;
+        color: #2b2d30;
+    }
 
+    .inputplanetarychart:focus {
+        border-bottom: 2px solid #ffffff;
+    }
 
+    .infolabel {
+        color: white;
+    }
+
+    .navSpanColor {
+        color: white;
+    }
+
+    .tableeverything {
+        color: white;
+    }
+
+    .gridBody {
+        border: 5px solid white;
+    }
 }
 
 *>* {
@@ -104,6 +151,7 @@ html[data-theme="dark"] {
 html {
     scroll-behavior: smooth;
 }
+
 
 .overlay {
     position: absolute;
@@ -157,9 +205,21 @@ header {
 
 .logo {
     width: 120px;
-    margin-right: 1rem;
     border-radius: 50%;
     cursor: pointer;
+}
+
+
+.header-logo {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: .5rem;
 }
 
 .logo h2 {
@@ -228,13 +288,36 @@ ul {
     gap: 1rem;
 }
 
+li {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
 li a {
     text-decoration: none;
     font-size: 1.25rem;
 }
 
+li span {
+    font-size: 1.25rem;
+    cursor: pointer;
+    user-select: none;
+}
+
 li a:hover {
     color: #c9c9c9;
+}
+
+#subMenu {
+    display: none;
+}
+
+#subMenu.showList {
+    display: flex;
+    margin-block: 1rem;
+    gap: 0.4rem;
+    font-style: italic;
 }
 
 .description {

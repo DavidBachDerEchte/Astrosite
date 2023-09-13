@@ -43,6 +43,15 @@ button:hover span {
     margin-bottom: 20px;
 }
 
+.APODTITle,
+.APODEX {
+    margin-bottom: 10px;
+}
+
+.APODEX {
+    font-weight: bold;
+}
+
 /*Loading*/
 
 .dot-spinner {

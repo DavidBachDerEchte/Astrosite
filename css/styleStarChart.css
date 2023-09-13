@@ -15,10 +15,21 @@
     transform: scale(0.95);
 }
 
-.Star_Chart_Picture {
+.Star-Chart-Picture {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+.Star-Chart-Error1 {
+    margin-top: 20px;
+    visibility: hidden;
+}
+
+.Star-Chart-Error2 {
+    margin-top: -27px;
+    visibility: hidden;
+}
+
 
 @keyframes button-shimmer {
     0% {
@@ -38,6 +49,10 @@
     100% {
         background-position: right bottom;
     }
+}
+
+.astroskychartimg {
+    margin-top: -80px !important;
 }
 
 maina {

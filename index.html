@@ -21,7 +21,7 @@
     <header>
         <div class="logo-wrap">
             <a href="index.html"><img src="Images/richtige/david_foto_official_logo.jpg" alt="Logo" class="logo"></a>
-            <h2>Astro Site</h2>
+            <a href="index.html" class="header-logo">Astro Site</a>
         </div>
         <div class="menu-icon"></div>
     </header>
@@ -29,22 +29,24 @@
     <nav>
         <ul>
             <li>
-                <a href="/html/AstroPhysicCalcuatior.html">Astro-physics-calculator</a>
+                <a href="/index.html">Homepage</a>
             </li>
             <li>
-                <a href="/html/Weather.html">Weather</a>
+                <span id="toggleMenuTools" class="navSpanColor">Astronomical tools and entertainment</span>
+                <ul id="subMenu">
+                    <li><a href="/html/Weather.html">Weather</a></li>
+                    <li><a href="/html/AstroPhysicCalcuatior.html">Astro-physic-calculator</a></li>
+                    <li><a href="/html/StarSearch.html">Star Search</a></li>
+                    <li><a href="/html/StarChart.html">Star Chart</a></li>
+                    <li><a href="/html/MarsGallery.html">Mars Gallery</a></li>
+                    <li><a href="/html/APOD.html">Astronomy Picture of the Day</a></li>
+                </ul>
             </li>
             <li>
-                <a href="/html/StarSearch.html">Star Search</a>
-            </li>
-            <li>
-                <a href="/html/StarChart.html">Star Chart</a>
-            </li>
-            <li>
-                <a href="/html/MarsGallery.html">Mars Gallery</a>
-            </li>
-            <li>
-                <a href="/html/APOD.html">Astronomy Picture of the Day</a>
+                <span id="toggleMenuInformation" class="navSpanColor">Information</span>
+                <ul id="subMenu">
+                    <li><a href="/html/CMB.html">Cosmic Microwave Background</a></li>
+                </ul>
             </li>
             <li>
                 <label class="theme-switch">
@@ -77,13 +79,13 @@
         Homepage
         <span id="covershadow"></span>
     </h1>
-
+    <!--I need to replace the mailto: email adress-->
     <main>
         <img src="Images/richtige/M63.jpg" alt="M63 Galaxy" class="startgalaxy">
         <h3>Hi! I'm David. I’m an Astro-, Nature-, Aerial photographer. I have 2 years of experience and I’m always open
             to new things.</br>
-            This is my first website. This website does have a few subsites. I have a local Weather forecast, and a
-            astro physics subsite.</h3>
+            This is my first website. If there are bugs or problems, feel free to <a
+                href="mailto:address@example.com">contact me</a>. So have fun.</h3>
     </main>
 
     <footer>
