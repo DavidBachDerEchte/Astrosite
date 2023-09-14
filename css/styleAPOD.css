@@ -32,23 +32,20 @@ button:hover span {
     transform: translateX(7px);
 }
 
-.apodpicfotos {
+.apod-pic-fotos {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.APODImage {
+.APOD-Image {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.APODTITle,
-.APODEX {
+.APOD-TITle,
+.APOD-EX {
     margin-bottom: 10px;
-}
-
-.APODEX {
     font-weight: bold;
 }
 
@@ -57,7 +54,6 @@ button:hover span {
 .dot-spinner {
     --uib-size: 2.8rem;
     --uib-speed: .9s;
-    --uib-color: #183153;
     position: absolute;
     display: none;
     align-items: center;

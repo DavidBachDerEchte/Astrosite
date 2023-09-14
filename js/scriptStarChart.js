@@ -41,7 +41,7 @@ runAstroApi.addEventListener("click", async function (event) {
     event.preventDefault();
 
 
-    const inputs = document.querySelectorAll(".astroskychartinput");
+    const inputs = document.querySelectorAll(".astro-sky-chart-input");
     const longitude = inputs[0].value;
     const latitude = inputs[1].value;
     const date = inputs[2].value;
@@ -96,7 +96,7 @@ runAstroApi.addEventListener("click", async function (event) {
 
             const img = document.createElement("img");
             img.src = data.data.imageUrl;
-            img.className = "astroskychartimg";
+            img.className = "astro-sky-chart-img";
 
             document.body.appendChild(img);
 

@@ -51,25 +51,20 @@
     }
 }
 
-.astroskychartimg {
+.astro-sky-chart-img {
     margin-top: -80px !important;
 }
 
-maina {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.mainasecondline {
+.maina-second-line {
     margin-top: 10px;
 }
 
-.Generatebutton {
+.Generate-button {
     margin-top: 10px;
 }
 
 
-.inputstarchart {
+.input-star-chart {
     max-width: 190px;
     padding: .15rem .5rem;
     min-height: 40px;
@@ -78,13 +73,14 @@ maina {
     border: none;
     line-height: 1.15;
     box-shadow: 0px 10px 20px -18px;
+    margin-bottom: 10px;
 }
 
-.inputstarchart:focus {
+.input-star-chart:focus {
     border-radius: 4px 4px 2px 2px;
 }
 
-.inputstarchart:hover {
+.input-star-chart:hover {
     outline: 1px solid lightgrey;
 }
 
@@ -108,7 +104,6 @@ maina {
 .dot-spinner {
     --uib-size: 2.8rem;
     --uib-speed: .9s;
-    --uib-color: #183153;
     position: absolute;
     display: none;
     align-items: center;

@@ -16,27 +16,27 @@ table {
     border-collapse: collapse;
 }
 
-.tableheadertext {
+.table-header-text {
     font-weight: 800;
     font-size: 20px;
 }
 
-.tablebodytext1 {
+.table-body-text-1 {
     font-weight: 500;
     font-size: 16px;
 }
 
-.tablebodytext2 {
+.table-body-text-2 {
     font-weight: 500;
     font-size: 16px;
 }
 
-.tablebodytext3 {
+.table-body-text-3 {
     font-weight: 500;
     font-size: 16px;
 }
 
-.tableeverything {
+.table-everything {
     display: none;
     visibility: hidden;
     margin-top: 50px;
@@ -45,12 +45,19 @@ table {
 }
 
 
+/*Information*/
+
+.Star-Search-Info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.25rem;
+}
+
 /*Loading*/
 
 .dot-spinner {
     --uib-size: 2.8rem;
     --uib-speed: .9s;
-    --uib-color: #183153;
     position: absolute;
     display: none;
     align-items: center;
@@ -159,17 +166,17 @@ table {
 
 @media screen and (max-width: 800px) {
 
-    .tablebodytext1,
-    .tablebodytext2,
-    .tablebodytext3 {
+    .table-body-text-1,
+    .table-body-text-2,
+    .table-body-text-3 {
         font-size: 13px;
     }
 
-    .tableheadertext {
+    .table-header-text {
         font-size: 16px;
     }
 
-    .tableeverything {
+    .table-everything {
         width: 95% !important;
     }
 
@@ -180,17 +187,17 @@ table {
 
 @media screen and (max-width: 600px) {
 
-    .tablebodytext1,
-    .tablebodytext2,
-    .tablebodytext3 {
+    .table-body-text-1,
+    .table-body-text-2,
+    .table-body-text-3 {
         font-size: 10px;
     }
 
-    .tableheadertext {
+    .table-header-text {
         font-size: 12px;
     }
 
-    .tableeverything {
+    .table-everything {
         width: 95% !important;
     }
 

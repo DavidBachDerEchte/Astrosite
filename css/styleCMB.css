@@ -1,26 +1,21 @@
-.CMBImportantInfo {
+.CMB-Important-Info {
     margin-left: 40px;
 }
 
-mainCMB {
+.CMB-Text {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin: 20px 20px 30px 20px;
+    margin: 20px 20px 0 20px;
 }
 
 .Ueberschrift,
-.subUeberschrift {
+.sub-Ueber-schrift {
     text-align: center;
 }
 
-mainCMB p,
-mainCMB li {
-    font-size: 18px;
-}
-
-mainCMB h3 {
-    font-size: 23px;
+.CMB-Text li {
+    margin-left: 20px;
 }
 
 .CMBImg {

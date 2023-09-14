@@ -1,4 +1,6 @@
-.basiccalculations {
+/*Titel*/
+
+.basic-calculations {
     font-size: 45px;
     font-weight: bold;
     text-align: center;
@@ -6,7 +8,7 @@
     margin-top: 20px;
 }
 
-.escapevelocityovertitel {
+.escape-velocity-overtitel {
     font-size: 45px;
     font-weight: bold;
     text-align: center;
@@ -14,19 +16,21 @@
     margin-top: 20px;
 }
 
-.surfaceareastarovertitel {
+.surface-area-star-overtitel {
     font-size: 45px;
     font-weight: bold;
     text-align: center;
 }
 
-.spatialangleovertitel {
+.spatial-angle-overtitel {
     font-size: 45px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
+/*Grid*/
 
 .gridItem {
     display: grid;
@@ -59,7 +63,7 @@
     grid-area: 1 / 2 / 2 / 3;
 }
 
-.DOSRovertitel {
+.DOSR-overtitel {
     font-size: 45px;
     font-weight: bold;
     text-align: center;
@@ -67,7 +71,7 @@
     margin-top: 20px;
 }
 
-.Escapevelositytitel {
+.Escape-velosity-titel {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 15px;
@@ -75,7 +79,7 @@
     font-weight: 800;
 }
 
-.infotext {
+.info-text {
     margin-top: 0;
     margin-left: 200px;
     margin-bottom: 0;
@@ -83,7 +87,7 @@
     font-weight: 800;
 }
 
-.TextforMassObject {
+.Text-for-Mass-Object {
     font-size: 15px;
     font-weight: 800;
     margin-left: 30px;
@@ -99,7 +103,7 @@
     margin-left: 10px;
 }
 
-.Escapevelosity {
+.Escape-velosity {
     margin-left: 10px;
     margin-right: 60%;
     box-shadow: 0 0 0 5px;
@@ -111,38 +115,38 @@
 
 /*Final result*/
 
-.finalresultescapevelocity {
+.final-result-escape-velocity {
     margin-left: 10px;
     padding-top: 20px;
     font-size: 15px;
     font-weight: 800;
 }
 
-.finalresultescapevelocitynumber {
+.final-result-escape-velocity-number {
     margin-left: 10px;
     font-size: 20px;
     font-weight: 800;
 }
 
-.finalresultescapevelocityconvert {
+.final-result-escape-velocity-convert {
     margin-left: 10px;
     font-size: 15px;
     font-weight: 800;
 }
 
-.finalresultescapevelocityconvernumber {
+.final-result-escape-velocity-convernumber {
     margin-left: 10px;
     font-size: 20px;
     font-weight: 800;
 }
 
-.finalresultescapevelocityrounded {
+.final-result-escape-velocity-rounded {
     margin-left: 10px;
     font-size: 15px;
     font-weight: 800;
 }
 
-.finalresultescapevelocityroundednumber {
+.final-result-escape-velocity-rounded-number {
     margin-left: 10px;
     font-size: 20px;
     font-weight: 800;
@@ -150,7 +154,7 @@
 
 /*Convert to Scientific notation*/
 
-.Converttoscientificnotation {
+.Convert-to-scientific-notation {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 15px;
@@ -158,7 +162,7 @@
     font-weight: 800;
 }
 
-.Textdecimalnum {
+.Text-decimalnum {
     font-size: 15px;
     font-weight: 800;
     margin-left: 43px;
@@ -169,20 +173,20 @@
     margin-left: 10px;
 }
 
-.convertresult {
+.convert-result {
     margin-left: 10px;
     padding-top: 20px;
     font-size: 15px;
     font-weight: 800;
 }
 
-.convertnumresult {
+.convert-numresult {
     margin-left: 10px;
     font-size: 20px;
     font-weight: 800;
 }
 
-.Converttoscientificnotationa {
+.Convert-to-scientific-notationa {
     margin-left: 10px;
     margin-right: 60%;
     box-shadow: 0 0 0 5px;
@@ -194,7 +198,7 @@
 
 /*Convert to decimal number*/
 
-.Converttodecimalnumber {
+.Convert-to-decimal-number {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 15px;
@@ -202,7 +206,7 @@
     font-weight: 800;
 }
 
-.Textscientificnotationnum {
+.Text-scientific-notation-num {
     font-size: 15px;
     font-weight: 800;
     margin-left: 43px;
@@ -213,20 +217,20 @@
     margin-left: 10px;
 }
 
-.convertresult1 {
+.convert-result1 {
     margin-left: 10px;
     padding-top: 20px;
     font-size: 15px;
     font-weight: 800;
 }
 
-.convertnumresult1 {
+.convert-numresult1 {
     margin-left: 10px;
     font-size: 20px;
     font-weight: 800;
 }
 
-.Converttodecimalnumbera {
+.Convert-to-decimal-numbera {
     margin-left: 10px;
     margin-right: 60%;
     box-shadow: 0 0 0 5px;
@@ -237,7 +241,7 @@
 
 }
 
-.infotexta {
+.info-texta {
     margin-top: 0;
     margin-left: 200px;
     margin-bottom: 0;
@@ -247,7 +251,7 @@
 
 /*Surface Area*/
 
-.surfaceareastara {
+.surface-area-stara {
     margin-left: 10px;
     margin-right: 60%;
     box-shadow: 0 0 0 5px;
@@ -258,7 +262,7 @@
 }
 
 
-.surfaceareastartitel {
+.surface-area-star-titel {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 15px;
@@ -266,18 +270,18 @@
     font-weight: 800;
 }
 
-.surfaceareastarinput2 {
+.surface-area-star-input2 {
     margin-left: 10px;
 }
 
-.finalresultsurarst1 {
+.final-result-surarst1 {
     margin-left: 10px;
     padding-top: 20px;
     font-size: 15px;
     font-weight: 800;
 }
 
-.finalresultsurarst2 {
+.final-result-surarst2 {
     margin-left: 10px;
     font-size: 20px;
     font-weight: 800;
@@ -285,7 +289,7 @@
 
 /*Spatial Angle*/
 
-.spatialanglea {
+.spatial-anglea {
     margin-left: 10px;
     margin-right: 60%;
     box-shadow: 0 0 0 5px;
@@ -296,7 +300,7 @@
 }
 
 
-.spatialangletitel {
+.spatial-angle-titel {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 15px;
@@ -304,14 +308,14 @@
     font-weight: 800;
 }
 
-.TextforradiusObject {
+.Text-for-radius-Object {
     font-size: 15px;
     font-weight: 800;
     margin-left: 10px;
     margin-bottom: 5px;
 }
 
-.TextforfaecheninhaltObject {
+.Text-for-faecheninhalt-Object {
     font-size: 15px;
     font-weight: 800;
     margin-left: 10px;
@@ -326,14 +330,14 @@
     margin-left: 10px;
 }
 
-.finalresultspatialangle1 {
+.final-result-spatial-angle1 {
     margin-left: 10px;
     padding-top: 20px;
     font-size: 15px;
     font-weight: 800;
 }
 
-.finalresultspatialangle2 {
+.final-result-spatial-angle2 {
     margin-left: 10px;
     font-size: 20px;
     font-weight: 800;
@@ -356,7 +360,7 @@
 }
 
 
-.DOSRtitel {
+.DOSR-titel {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 15px;
@@ -364,7 +368,7 @@
     font-weight: 800;
 }
 
-.TextfordistanceinAUObject {
+.Text-for-distance-in-AU-Object {
     text-align: left;
     font-size: 15px;
     font-weight: 800;
@@ -373,13 +377,13 @@
 }
 
 
-.finalresultDOSR1 {
+.final-result-DOSR1 {
     margin-left: 10px;
     font-size: 20px;
     font-weight: 800;
 }
 
-.finalresultDOSR2 {
+.final-result-DOSR2 {
     margin-left: 10px;
     font-size: 20px;
     font-weight: 800;

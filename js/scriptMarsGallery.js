@@ -69,7 +69,7 @@ runMarsGalleryApi.addEventListener("click", async function (event) {
 
 });
 
-const gobackupconst = document.querySelector(".gobackupbutton");
+const gobackupconst = document.querySelector(".go-backup-button");
 
 gobackupconst.addEventListener("click", function () {
     window.scrollTo(0, 0);

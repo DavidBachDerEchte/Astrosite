@@ -28,22 +28,22 @@ document.addEventListener("DOMContentLoaded", async function (event) {
 
         const img = document.createElement('img');
         img.src = data.url;
-        img.classList.add('APODImage');
+        img.classList.add('APOD-Image');
         imageContainer.appendChild(img);
 
         const p3 = document.createElement('h2');
         p3.textContent = data.title;
-        p3.classList.add('APODTITle');
+        p3.classList.add('APOD-TITle');
         imageContainer.appendChild(p3);
 
         const p2 = document.createElement('p');
         p2.textContent = "Explanation: ";
-        p2.classList.add('APODEX');
+        p2.classList.add('APOD-EX');
         imageContainer.appendChild(p2);
 
         const p = document.createElement('p');
         p.textContent = data.explanation;
-        p.classList.add('APODText');
+        p.classList.add('APOD-Text');
         imageContainer.appendChild(p);
 
 

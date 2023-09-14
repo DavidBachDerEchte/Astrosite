@@ -8,6 +8,20 @@ html {
     --icon-stroke-color: #fff;
     --icon-fill-color: #fff;
 
+    --uib-color: #2b2d30;
+
+    & .input-star-chart {
+        background-color: #e0e0e0;
+        color: #2b2d30;
+    }
+
+    & .form {
+        background: #2b2d30;
+        --border-color: #ffffff;
+    }
+
+
+
 }
 
 html[data-theme="light"]>body {
@@ -16,6 +30,7 @@ html[data-theme="light"]>body {
     --bg-color: #2b2d30 !important;
     background-color: white !important;
     --discription-color: #2b2d30 !important;
+    --uib-color: #2b2d30;
 
     .form {
         background: #2b2d30;
@@ -35,30 +50,30 @@ html[data-theme="light"]>body {
         background: linear-gradient(to bottom, #44484d, #7f858f);
     }
 
-    .inputstarchart {
+    .input-star-chart {
         background-color: #e0e0e0;
         color: #2b2d30;
     }
 
-    .inputstarchart:focus {
+    .input-star-chart:focus {
         border-bottom: 2px solid #2b2d30;
     }
 
-    .inputplanetarychart {
+    .input-planetary-chart {
         background-color: #e0e0e0;
         color: #2b2d30;
     }
 
-    .inputplanetarychart:focus {
+    .input-planetary-chart:focus {
         border-bottom: 2px solid #2b2d30;
     }
 
-    .astromarsgalleyinput {
+    .astro-mars-galley-input {
         border-color: #2b2d30;
         background: white;
     }
 
-    .infolabel {
+    .info-label {
         color: #2b2d30;
     }
 
@@ -66,7 +81,7 @@ html[data-theme="light"]>body {
         color: #2b2d30;
     }
 
-    .tableeverything {
+    .table-everything {
         color: #2b2d30;
     }
 
@@ -82,6 +97,7 @@ html[data-theme="dark"] {
     --bg-color: white !important;
     background-color: var(--text-color);
     --discription-color: #e9e9e9 !important;
+    --uib-color: white;
 
     & .menu-icon {
         background-image: url(/Images/richtige/menu-default_light.svg);
@@ -92,7 +108,7 @@ html[data-theme="dark"] {
     }
 
     .form {
-        background: #fff;
+        background: white;
         --border-color: #2b2d30;
     }
 
@@ -109,25 +125,25 @@ html[data-theme="dark"] {
         background: linear-gradient(to bottom, #ffffff, #989fa8);
     }
 
-    .inputstarchart {
+    .input-star-chart {
         background-color: #ffffff;
         color: #2b2d30;
     }
 
-    .inputstarchart:focus {
+    .input-star-chart:focus {
         border-bottom: 2px solid #ffffff;
     }
 
-    .inputplanetarychart {
+    .input-planetary-chart {
         background-color: #ffffff;
         color: #2b2d30;
     }
 
-    .inputplanetarychart:focus {
+    .input-planetary-chart:focus {
         border-bottom: 2px solid #ffffff;
     }
 
-    .infolabel {
+    .info-label {
         color: white;
     }
 
@@ -135,12 +151,16 @@ html[data-theme="dark"] {
         color: white;
     }
 
-    .tableeverything {
+    .table-everything {
         color: white;
     }
 
     .gridBody {
         border: 5px solid white;
+    }
+
+    .input-div {
+        background-color: #2b2d30;
     }
 }
 
@@ -165,7 +185,7 @@ html {
     z-index: 12;
 }
 
-body {
+.everything-for-everywhere {
     margin: 0;
     padding: 0;
     display: flex;
@@ -189,7 +209,7 @@ img {
     max-width: 100%;
 }
 
-header {
+.Header-Everything-Class {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -226,7 +246,7 @@ header {
     font-size: 2.33rem;
 }
 
-header .menu-icon {
+.menu-icon {
     margin-right: 2.5rem;
     width: 48px;
     height: 48px;
@@ -238,7 +258,7 @@ header .menu-icon {
     z-index: 13;
 }
 
-header .menu-icon.close {
+.menu-icon.close {
     background-image: url(/Images/richtige/menu-close_dark.svg);
 }
 
@@ -370,20 +390,31 @@ li a:hover {
     background-color: var(--text-color);
 }
 
-main {
+.Main-Main {
     margin: 0 2rem 4rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main .startgalaxy {
+
+.Start-Img-Homepage {
     width: 60%;
     margin-block: 2rem;
 }
 
 
-footer {
+.My-Description-H2 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.Footer-Everything {
     display: flex;
     align-items: center;
     justify-content: space-between;

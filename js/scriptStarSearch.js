@@ -70,6 +70,7 @@ runAstroApi.addEventListener("click", async function (event) {
     loadingicona.style.display = "none";
 
     data = data.data[0];
+    rerrorshow();
 
     if (data === undefined || data === null) {
         rerrorshow();

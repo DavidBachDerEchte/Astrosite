@@ -41,53 +41,48 @@ document.addEventListener("click", (event) => {
     }
 })
 
-const windowprefertscheme = window.matchMedia('(prefers-color-scheme: light)');
+// ########## Theme Switch ############
+
 const themeSwitchDark = document.querySelector(".theme-switch__checkbox");
+const htmlElement = document.querySelector("html");
+const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const isDarkModeEnabled = localStorage.getItem("darkmodeon") === "true";
+
+
+function toggleDarkMode() {
+    if (htmlElement.getAttribute("data-theme") === "dark") {
+        htmlElement.removeAttribute("data-theme");
+        localStorage.setItem("darkmodeon", "false");
+    } else {
+        htmlElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("darkmodeon", "true");
+    }
+}
+
+if (prefersDarkMode === true) {
+    htmlElement.removeAttribute("data-theme");
+    htmlElement.setAttribute("data-theme", "dark");
+    themeSwitchDark.checked = true;
+} else {
+    htmlElement.setAttribute("data-theme", "light");
+    htmlElement.removeAttribute("data-theme");
+    themeSwitchDark.checked = false;
+}
+
+
+themeSwitchDark.checked = isDarkModeEnabled;
 
 themeSwitchDark.addEventListener("change", () => {
-    nav.style.transition = "none"
-    setTimeout(() => {
-        nav.style.transition = ""
-    }, 10)
-})
+    toggleDarkMode();
+});
 
-if (windowprefertscheme.matches) {
-    const htmlElement = document.querySelector("html");
-    htmlElement.setAttribute("data-theme", "light");
-    themeSwitchDark.addEventListener("change", () => {
-        if (htmlElement.hasAttribute("data-theme")) {
-            const currentTheme = htmlElement.getAttribute("data-theme");
-            if (currentTheme === "dark") {
-                htmlElement.removeAttribute("data-theme", "dark");
-                htmlElement.setAttribute("data-theme", "light");
-            } else {
-                htmlElement.setAttribute("data-theme", "dark");
-            }
-        } else {
-            htmlElement.setAttribute("data-theme", "dark");
-        }
-    });
-}
-
-if (windowprefertscheme.matches === false) {
-    const htmlElement = document.querySelector("html");
+if (isDarkModeEnabled) {
     htmlElement.setAttribute("data-theme", "dark");
-    themeSwitchDark.setAttribute("checked", "true");
-    themeSwitchDark.addEventListener("change", () => {
-        if (htmlElement.hasAttribute("data-theme")) {
-            const currentTheme = htmlElement.getAttribute("data-theme");
-            if (currentTheme === "light") {
-                htmlElement.removeAttribute("data-theme", "light");
-                htmlElement.setAttribute("data-theme", "dark");
-            } else {
-                htmlElement.setAttribute("data-theme", "light");
-            }
-        } else {
-            htmlElement.setAttribute("data-theme", "light");
-        }
-    });
-
+} else {
+    htmlElement.removeAttribute("data-theme", "light");
 }
+
+
 
 // ########## Nav toggle links ############
 
@@ -102,4 +97,3 @@ elements.forEach((element) => {
         element.nextElementSibling.classList.toggle("showList");
     })
 })
-
