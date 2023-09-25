@@ -20,6 +20,10 @@ html {
         --border-color: #ffffff;
     }
 
+    .input {
+        color: white;
+    }
+
 
 
 }
