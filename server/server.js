@@ -33,8 +33,6 @@ app.post("/weather", async (req, res) => {
 
     const data = await response.json();
 
-
-
     if (data.error) {
         res.json({ error: "failed to fetch" });
         return;

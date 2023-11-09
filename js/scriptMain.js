@@ -59,16 +59,13 @@ function toggleDarkMode() {
     }
 }
 
-if (prefersDarkMode === true) {
+if (prefersDarkMode) {
     htmlElement.removeAttribute("data-theme");
     htmlElement.setAttribute("data-theme", "dark");
-    themeSwitchDark.checked = true;
 } else {
     htmlElement.setAttribute("data-theme", "light");
     htmlElement.removeAttribute("data-theme");
-    themeSwitchDark.checked = false;
 }
-
 
 themeSwitchDark.checked = isDarkModeEnabled;
 

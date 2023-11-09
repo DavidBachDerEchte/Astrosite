@@ -8,13 +8,8 @@ function rerrorshow() {
     errormessage2.style.visibility = 'visible';
 }
 
-
-
 const runSearch = document.getElementById("runApi");
 const inputCity = document.getElementById("locationinputid");
-
-
-
 
 runSearch.addEventListener("click", async (event) => {
     event.preventDefault();
